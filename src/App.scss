@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+.App {
+  font-family: 'Sora', sans-serif;
+}
+
+.App-header {
+  padding: 2% 10%;
+  background-color: #12122D;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.user-card {
+  background-color: #333348;
+  border-radius: 40px;
+  width: 420px;
+  height: 370px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  &:hover {
+    border: 5px solid #00cfff;
+    margin: -5px;
+  }
+
+  .user-descr {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    font-size: 24px;
+    line-height: 6px;
+    text-align: center;
+  }
+
+  .user-button {
+    border: 0;
+    padding: 20px 44px;
+
+    background: #52519D;
+    border-radius: 40px;
+    font-weight: 600;
+    color: #eeeeee;
+    font-size: 24px;
+
+    &:hover {
+      border: 5px solid #00cfff;
+      margin: -5px;
+    }
+  }
+}
+
+.users-block {
+  margin: 2% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 870px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &-text {
+    h1 {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 30px;
+      color: #EEEEEE;
+    }
+  }
+
+  &-search input {
+    width: 248px;
+    height: 70px;
+    border: 0;
+    padding-left: 35px;
+    background: #333348;
+    border-radius: 40px;
+    font-size: 24px;
+    line-height: 30px;
+    color: #EEEEEE;
+
+    &:focus {
+      outline: none;
+      border: 5px solid #00cfff;
+      margin: -5px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  .nav-prev {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    &:hover{
+      p{
+        color:#00cfff;
+      }
+      .prev-arrow .svg{
+        stroke: #00cfff;
+      }
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 30px;
+
+      color: #EEEEEE;
+    }
+  }
+
+  .prev-arrow {
+    margin-right: 30px;
+    width: 18px;
+    height: 36px;
+    
+  }
+  &-next{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    &:hover{
+      p{
+        color:#00cfff;
+      }
+      .next-arrow .svg{
+        stroke: #00cfff;
+      }
+    }
+    p {
+      font-size: 24px;
+      line-height: 30px;
+
+      color: #EEEEEE;
+    }
+  }
+  .next-arrow{
+    margin-left: 30px;
+    width: 18px;
+    height: 36px;
+    transform: rotate(180deg);
+    text-decoration: none;
+  }
+}
