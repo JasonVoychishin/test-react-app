@@ -13,6 +13,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
+          <p className='descr'>Данное приложение тест публикации ReactApp на GitHub Pages</p>
           <Header />
           <div className="users-block">
             <UsersBlock />
